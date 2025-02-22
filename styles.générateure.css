@@ -1,0 +1,232 @@
+body {
+    font-family: 'Determination Mono', monospace;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header {
+    background-color: #1f1f1f;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #f39c12;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+
+.main {
+    padding: 2rem 0;
+}
+
+h1 {
+    color: #f39c12;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #bbb;
+}
+
+.options {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+.form-group select,
+.form-group textarea,
+.form-group input[type="color"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #e0e0e0;
+    font-family: 'Determination Mono', monospace;
+}
+
+.form-group input[type="color"] {
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #f39c12;
+    color: #000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Determination Mono', monospace;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #d35400;
+    transform: scale(1.05);
+}
+
+.character-select {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.character-select img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border: 2px solid #f39c12;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-select img:hover {
+    transform: scale(1.1);
+}
+
+.character-select img.selected {
+    border-color: #d35400;
+}
+
+#preview-container {
+    width: 600px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    text-align: center;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #f39c12;
+}
+
+#download-button {
+    display: none;
+    margin: 1rem auto;
+    background-color: #f39c12;
+    color: #000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Determination Mono', monospace;
+}
+
+#download-button:hover {
+    background-color: #d35400;
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #1f1f1f;
+        padding: 1rem;
+    }
+
+    .nav-links a {
+        margin: 0.5rem 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #preview-container {
+        width: 100%;
+        padding: 10px;
+    }
+}

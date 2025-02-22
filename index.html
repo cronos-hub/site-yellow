@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site officiel de la traduction française d'Undertale Yellow par Arvix">
+    <title>Undertale Yellow FR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="web/image/Undertale yellow FR996a.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Determination+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Determination Mono', sans-serif;
+        }
+
+        .header {
+            background-color: #1f1f1f;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            color: #f39c12;
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            background: url('web/image/banniere_UTY.png') no-repeat center center/100% auto;
+            color: #fff;
+            padding: 100px 20px;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .hero h1,
+        .hero p {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #f39c12;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-primary:hover {
+            background: #d35400;
+        }
+
+        .footer {
+            background-color: #1f1f1f;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .video {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .video-description {
+            max-width: 400px;
+            color: #e0e0e0;
+        }
+
+        .video iframe {
+            border-radius: 10px;
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            background: #1f1f1f;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .team-member img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .team-member h3 {
+            font-size: 1.2rem;
+            color: #f39c12;
+        }
+
+        .team-member p {
+            font-size: 0.9rem;
+            color: #e0e0e0;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .nav-links a {
+            position: relative;
+            display: inline-block;
+        }
+
+        .nav-links a::after {
+            content: attr(data-description);
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #f39c12;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            z-index: 1000;
+        }
+
+        .nav-links a:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .team-member a {
+            color: #e0e0e0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .team-member a:hover {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Undertale Yellow FR</a>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="générateur.html" data-description="Générez des dialogue pour Undertale Yellow.">Générateur</a>
+                <a href="sauvegarde.html" data-description="Gérez vos sauvegardes de jeu.">Sauvegarde</a>
+                <a href="#faq" data-description="Consultez les questions fréquemment posées.">FAQ</a>
+                <a href="https://discord.gg/mAwZBxhSSf" data-description="Rejoignez notre communauté Discord.">Discord</a>
+                <a href="Ressources.html" data-description="Explorez les Ressources du jeu.">Ressources</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container text-center">
+                <h1>Bienvenue sur Undertale Yellow FR</h1>
+                <p>Découvrez la traduction française complète réalisée par Arvix. Téléchargez le patch et rejoignez notre communauté passionnée.</p>
+                <a href="https://drive.google.com/drive/folders/1FAq_MzPZIhfGQBbRoeop9kBwjfddaXyg" class="btn-primary">Télécharger le Patch</a>
+            </div>
+        </section>
+
+        <section id="installation" class="about">
+            <div class="container">
+                <h2>Tutoriel d'installation</h2>
+                <p>Il suffit de glisser le fichier data.win du patch dans le dossier de votre jeu Undertale Yellow pour le remplacer. Pour une explication plus visuelle, référez-vous au tutoriel présent dans la vidéo d'explication du projet en bas de page. En cas de difficulté, n'hésitez pas à solliciter de l'aide dans le salon question du discord.</p>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2>FAQ</h2>
+                <ul>
+                    <li>
+                        <strong>Comment installer le patch ?</strong>
+                        <p>Consultez le tutoriel ci-dessus, ou référez-vous à la présentation vidéo en bas de page.</p>
+                    </li>
+                    <li>
+                        <strong>Où signaler un bug ?</strong>
+                        <p>Pour tout signalement de bug, c'est-à-dire des fautes d'orthographe, de texte qui déborde d'une boîte dialogue ou de problème technique, ils peuvent tous être reportés dans notre <a href="https://discord.gg/mAwZBxhSSf" class="faq-link">serveur Discord</a>.</p>
+                    </li>
+                    <li>
+                        <strong>Puis-je utiliser ce patch lors d'une vidéo ou d'un stream sans le créditer ?</strong>
+                        <p>Oui, vous pouvez l'utiliser sans avoir à vous acquitter d'un crédit en description.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="team" class="team">
+            <div class="container">
+                <h2>Crédits</h2>
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="web\image\arvix_pp.png" alt="Arvix">
+                        <h3>Arvix</h3>
+                        <p>Créateur du Patch FR pour Undertale Yellow. Je corrige régulièrement ce dernier grâce à la communauté sur Discord. Retrouvez mon travail sur <a href="https://youtube.com/@utyfr-arvix">YouTube</a>.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="web\image\cronos_PP.gif" alt="Cronos">
+                        <h3>Cronos</h3>
+                        <p>Administrateur du Discord et développeur du site. Pour en savoir plus sur moi, je vous invite à vous référer à ma chaîne <a href="https://www.youtube.com/channel/UCQ1EVaUo2IaSSfMW-zly_Uw">YouTube</a>.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="web/image/undertaleyellow.png" alt="Undertale Yellow">
+                        <h3>Undertale Yellow</h3>
+                        <p>Un magnifique jeu créé par des fans et traduit en français grâce à ce projet. Merci aux développeurs originaux !</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="web/image/coeur.png" alt="Undertale Mod Tool">
+                        <h3>Undertale Mod Tool</h3>
+                        <p>L'outil indispensable qui a permis de traduire et modifier les fichiers du jeu pour créer cette version française.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="video">
+            <div class="video-description">
+                <h2>Présentation Vidéo</h2>
+                <p>Cette vidéo vous présente le projet Undertale Yellow FR et inclut un guide visuel pour installer le patch. N'hésitez pas à la consulter pour toutes vos questions.<br>(le time code est 3:02 jusqu'à 4:10)</p>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CFCQ_0WOgw0?rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>Cette page n'est actuellement pas finie !</p>
+        </div>
+    </footer>
+</body>
+</html>

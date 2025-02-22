@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Générateur de boîtes de dialogue Undertale - Créez des boîtes de dialogue personnalisées pour Undertale Yellow">
+    <title>Générateur de boîtes de dialogue Undertale</title>
+    <link rel="stylesheet" href="styles.générateure.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Determination+Mono&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="web/image/Undertale yellow FR996a.ico" type="image/x-icon">
+    <style>
+        /* Style pour la fenêtre d'information */
+        .info-popup { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+        .info-content { background-color: #ffcc00; color: #000; padding: 20px; border-radius: 8px; text-align: center; max-width: 400px; box-shadow: 0 0 10px rgba(0,0,0,0.5); }
+        .info-content h2 { margin-top: 0; }
+        .info-content button { margin-top: 15px; padding: 10px 20px; border: none; border-radius: 5px; background-color: #000; color: #fff; cursor: pointer; font-weight: bold; }
+        .info-content button:hover { background-color: #333; }
+    </style>
+</head>
+<body>
+    <!-- Pop-up d'information -->
+    <div class="info-popup" id="infoPopup">
+        <div class="info-content">
+            <h2>🚧 En développement 🚧</h2>
+            <p>Cette page est actuellement en développement et n'est pas encore fonctionnelle. Revenez bientôt !</p>
+            <button onclick="closeInfoPopup()">Fermer</button>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Undertale Yellow FR</a>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="sauvegarde.html">Sauvegarde</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="https://discord.gg/mAwZBxhSSf">Discord</a>
+                    <a href="code.html">Strings</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1>Générateur de boîtes de dialogue Undertale</h1>
+            <p class="intro">Créez des boîtes de dialogue personnalisées pour Undertale Yellow. Choisissez un personnage, une expression, une police, et entrez votre texte.</p>
+
+            <div class="options">
+                <div class="form-group">
+                    <label for="character-select">Personnage:</label>
+                    <div id="character-select" class="character-select"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="expression">Expression:</label>
+                    <select id="expression">
+                        <option value="neutral">Neutre</option>
+                        <option value="happy">Heureux</option>
+                        <option value="sad">Triste</option>
+                        <option value="angry">En colère</option>
+                        <option value="surprised">Surpris</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="font">Police:</label>
+                    <select id="font">
+                        <option value="Détermination Sans">Détermination Sans</option>
+                        <option value="Détermination Mono">Détermination Mono</option>
+                        <option value="Comic Sans">Comic Sans</option>
+                        <option value="Papyrus">Papyrus</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="text-color">Couleur du texte:</label>
+                    <input type="color" id="text-color" value="#ffffff">
+                </div>
+
+                <div class="form-group">
+                    <label for="box-color">Couleur de la boîte:</label>
+                    <input type="color" id="box-color" value="#000000">
+                </div>
+
+                <div class="form-group">
+                    <label for="text">Texte:</label>
+                    <textarea id="text" rows="4" placeholder="Entrez le texte ici..."></textarea>
+                </div>
+
+                <button onclick="drawDialogueBox()">Générer la boîte de dialogue</button>
+            </div>
+
+            <div id="preview-container"></div>
+
+            <button id="download-button">Télécharger la boîte de dialogue</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>pas encore finit ici !! <img src="web/image/pas finit.png" alt="Pas fini" style="width: 20px; height: 20px;"></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        function closeInfoPopup() {
+            document.getElementById('infoPopup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
