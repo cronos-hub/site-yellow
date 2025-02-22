@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="225" height="225" viewBox="0 0 1 1" preserveAspectRatio="none">
+    <defs>
+        <clipPath id="clip-path" clipPathUnits="userSpaceOnUse">
+            <use xlink:href="#filterPath" fill="none"/>
+        </clipPath>
+        <path id="filterPath" d="M 0 0 L 0 1 L 1 1 L 1 0 L 0 0Z">
+        </path>
+    </defs>
+    
+    <g clip-path="url(#clip-path)"><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEUAAAD////8/Pz5+fkEBATb29tFRUV3d3dlZWW0tLSdnZ07OzvFxcW4uLgICAheXl7MzMwsLCytra3W1tZpaWnt7e2+vr6CgoJWVlYWFhZzc3Ph4eH09PR7e3szMzPT09MjIyNMTExAQEBZWVmUlJSjo6OKioomJiYaGhokVTSdAAAE8klEQVR4nO2ciXaiMBSGSYiK1QIqOlVw6/7+Tzi5WZCt0lpPCZz/Oz1TltTm681GSMbzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAumLPJAt58MSqbOTV8CgP4q4z+SsmjHFpKBoMH+l+LA/mXWfyVyjDk1ePIWdTuh/Lg74bcs7o4LlmuKTL8wEYSoW35XI5rZXSlbz8MBqG4TU4GQpPfgnRdWZvotVQtzRCKMk+8g1Dbkppf2PYynwxHp+3PY5hG5yv12v+0kNDQVneU1NCJZVbHa7KLS8pytOo6+zegDHUPtaIkyNvqJx9NFQkOmp5uIwbH4bh6/LtbU5K+2SXvGtDn6+i3SRYVwz7WUq91NY7OhnbGMb21gAMRzb/n7JGnvWhT4aiZsjYi+0Pm1vUUN4InWttc0OZPWMoI9oYQzK8UO/7xVc3uiU3nM2eD4Ex5PHH7Pk0qgryZDFTjJsiJbxP+RnjbQcSV8k1Mj/LMmvIM3laH8nRVV/CTrqbKSG8vbyVnV0rppdAXTp8OvCbegvumzTbRkP5nMn8sbuGBRHmt4zEVVGsSdLoTxo6RjmGuqf3OW952Gj+LMcNqUzGyU4ymSSvLYbT5VQi/zkXP8txw3zeiYjaH4n1jyTFz3LckAY2G3VJ1q7gW3rcz4LiZ7lryE0IyVD31xFrfrioGPKsNI7b+dxRw/UxTY/UEWwofrPx7LCn7mKVpqP0mqXPs+Qwy1nsZW/ipqEqnEemS6k4qvj4NFL1vBf/SgxrPSZ3NYY0j2ZUhZ7h5qQ4k7eTerdfdiye0F/DVUNRNlSwg3fdkFcenNWJi4amCU11ML1wZbNMb6Ne2kY3VVw0pJZmNEqjKAqo/xbnIFI8bUar0YpdqYj9MVTop57iWHNdm3DrraFsI+iBKBReadpeTXD8MISuGlKbWH/mSc0s6gAMlcdEjrgL7CdB+tP4uW1YHaXx1ieonhnqOJYNr3b2fTQs+7QPvHtnWNHx2fBieB9g+PfAEIYw7B4YwhCG3XNPQ96bt2u3+qmJ/iHHUL+aO7f/zr/lnjFcvT88vC26Nqpyz3qolky7Vg3tXNtNz4JVpu2/rgN0DG+bk+mHYexn6/V9BB01PH18bHc/fTnRJ0PVLExunJPphaFCrYIuTK7lr82apxR5vsRW/1heAhw3ZJVVzzb/NT+j1xB05w05G70+aJY200d7JeeRQkbmK3PrddmbGNbX05h9T5XEvp7zX14S98OQc1ZcT8Otc3WIstevNHy9ca+0+MZxQ2JjrwS2mj3WEv+ziR8viWHYOTAsAUMnmTDTw+cbRQOzwkmvISrxz8o3JXYVtf8wiYLkyV4JaCi2j4Kgvi5dGQbfTOwKyjAsXgkoKHo+otHQ+2ZiVzC71QtbQQLq0g9mY2wZZbgtugRML4JrSOwK6v9U+CzmMKErtDaxHhXV0pR2lNjE9Q0KzpDE83l8uhgK74muzH6S+PBHef0lovTNC79MSCW6ss3pSuLuURvOLnk28fkiy2rLeiFx+cRRBC3au9Qjsg3Li/gqiUUxMSm6vlHfZvESwyuthqjsvyv/KDAM8w9iyrOute52nTcjq7aqwfRdHQ1P0hqGoY3k0AwJ46UbpkEaAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAHwHzIEN085rewFAAAAAElFTkSuQmCC" id="shapeImage" style="transform-origin: center; width: 100%; height: 100%" preserveAspectRatio="none"/></g>
+<svg viewBox="0 0 1 1" preserveAspectRatio="none">
+            <use id="shapeOverlay" xlink:href="#filterPath" fill="rgb(0,0,0)" fill-opacity="0"/>
+        </svg><g id="hoverEffects">
+            <animateTransform xlink:href="#shapeImage" attributeName="transform" attributeType="XML" type="scale" values="1.51;1" keyTimes="0;1" keySplines="0.5 0 0.5 1" dur="0.3s" fill="freeze" repeatCount="1" begin="indefinite"/>
+            <animate xlink:href="#shapeOverlay" attributeName="fill-opacity" values="0;1" keyTimes="0;1" keySplines="0.5 0 0.5 1" dur="0.3s" fill="freeze" repeatCount="1" begin="indefinite"/>
+        </g><style>
+            
+            svg:not([class^="o_shape_anim_random_"]) #shapeImage {
+                scale: 1.51;
+            }
+        </style></svg>
