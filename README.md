@@ -16,7 +16,7 @@ Ce site a pour objectif de fournir des outils et des ressources pour la communau
 - CSS
 - JavaScript
 - Google Fonts
-- 
+  
 ## Contribution
 
 Les contributions sont les bienvenues ! Ouvrez une issue ou soumettez une pull request.
